@@ -47,7 +47,7 @@ export const HslSearch = () => {
             return (
               <li key={route.shortName}>
                 ({route.shortName}) {route.longName}{' '}
-                {route.mode == 'BUS' ? <BiBus /> : <BiTrain />}
+                {route.mode === 'BUS' ? <BiBus /> : <BiTrain />}
               </li>
             );
           })}
